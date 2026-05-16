@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NovaTech | Electronicos seleccionados</title>
+    <meta name="description" content="Tienda minimal de electronicos: audio, consolas, smart home, energia, juguetes RC y redes mesh.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="NovaTech inicio">NovaTech</a>
+      <nav class="category-nav" aria-label="Categorias principales"></nav>
+      <div class="header-actions">
+        <button class="icon-button search-trigger" type="button" aria-label="Buscar productos" title="Buscar">
+          <i data-lucide="search"></i>
+        </button>
+        <a class="icon-button cart-link" href="cart.html" aria-label="Carrito" title="Carrito">
+          <i data-lucide="shopping-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1800&q=82" alt="Bocina y audifonos sobre una mesa minimalista">
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">Audio, gaming, smart home y redes</p>
+          <h1>Electronica lista para disfrutar.</h1>
+          <p>Productos disponibles, precios claros y pedido directo por WhatsApp.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#destacados">Ver destacados</a>
+            <a class="button ghost" href="category.html?cat=consolas-videojuegos">Consolas</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-strip" aria-label="Ventajas de compra">
+        <div>
+          <strong>Stock visible</strong>
+          <span>Compra solo productos disponibles.</span>
+        </div>
+        <div>
+          <strong>Pedido rapido</strong>
+          <span>El carrito genera tu orden por WhatsApp.</span>
+        </div>
+        <div>
+          <strong>Asesoria directa</strong>
+          <span>Consulta compatibilidad antes de comprar.</span>
+        </div>
+      </section>
+
+      <section class="section" id="destacados">
+        <div class="section-heading">
+          <p class="eyebrow">Disponibles ahora</p>
+          <h2>Productos destacados</h2>
+          <a href="category.html?cat=audifonos">Explorar catalogo</a>
+        </div>
+        <div class="product-grid featured-products"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Compra por tipo</p>
+          <h2>Categorias principales</h2>
+        </div>
+        <div class="category-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="index.html">NovaTech</a>
+        <p>Electronicos seleccionados con compra simple y soporte directo.</p>
+      </div>
+      <nav aria-label="Enlaces de informacion">
+        <a href="about.html">Acerca de</a>
+        <a href="support.html">Soporte</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a>
+        <a href="https://wa.me/50557178449" target="_blank" rel="noreferrer">WhatsApp</a>
+      </nav>
+    </footer>
+
+    <div class="search-panel" hidden>
+      <div class="search-box" role="dialog" aria-modal="true" aria-label="Busqueda global">
+        <div class="search-row">
+          <i data-lucide="search"></i>
+          <input id="globalSearch" type="search" placeholder="Buscar Beats, PlayStation, router..." autocomplete="off">
+          <button class="icon-button search-close" type="button" aria-label="Cerrar busqueda"><i data-lucide="x"></i></button>
+        </div>
+        <div class="search-results"></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="assets/js/catalog.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
